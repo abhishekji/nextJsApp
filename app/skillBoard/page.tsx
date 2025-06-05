@@ -16,7 +16,6 @@ async function getSkills(){
     } else {
         return [];
     }
-
 }
 
 export default async function SkillBoard() {

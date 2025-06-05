@@ -10,7 +10,7 @@ export function SkillForm() {
     const submitSkill = async () => {
         const res = await fetch('/api/skills',{
             method: 'POST',
-            body: JSON.stringify({name, level, userId: 'MockId', id: 7})
+            body: JSON.stringify({name, level, userId: 'MockId', id: Math.random() * 1000  })
         });
         console.log(res);
         if(res.ok){
