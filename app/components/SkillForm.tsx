@@ -2,7 +2,7 @@
 
 import {useState} from 'react';
 
-export function SkillForm() {
+const SkillForm: React.FC<{updateList: () => void}> = ({updateList}) => {
 
     const [name, setName] = useState<string>('');
     const [level, setLevel] = useState<number>(1);
@@ -17,6 +17,7 @@ export function SkillForm() {
             console.log('Skill added');
             setName('');
             setLevel(1);
+            updateList();
         }
 
     }
@@ -46,3 +47,5 @@ export function SkillForm() {
         </form>
     )
 }
+
+export default SkillForm;

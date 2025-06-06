@@ -1,11 +1,11 @@
 import React from 'react'
 
 import notFound from '@/app/notFound';
-const ProductDetails = async ({params}: {params: Promise<{productId: string, reviewId: string}>}) => {
+const ProductDetails:React.FC<{params: Promise<{productId: string, reviewId: string}>}> = async ({params}) => {
   const paramsData = (await params).productId;
 
     const resData =  (await params);
-    throw new Error();
+    // throw new Error();
    const {productId, reviewId} = resData;
    console.log('review', reviewId);
     // if(!reviewId){
