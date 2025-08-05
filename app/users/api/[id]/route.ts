@@ -2,7 +2,6 @@ import React from 'react'
 
 import { users } from '@/app/data/users'
 
-
 export const GET = async(
     request: Request,
     {params}:{params: Promise<{id: string}>}
