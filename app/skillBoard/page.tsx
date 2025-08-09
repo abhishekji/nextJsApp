@@ -17,7 +17,7 @@ export default function SkillBoard() {
   async function getSkills() {
     setisLoading(true);
     try {
-      const res = await fetch("http://localhost:3000/api/skills");
+      const res = await fetch("/api/skills");
       const resData = await res.json();
       console.log(resData);
       if (Object.keys(resData).length > 0) {
