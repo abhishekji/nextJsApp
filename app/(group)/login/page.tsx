@@ -8,12 +8,15 @@ export default function LoginPage() {
   const router = useRouter();
   const [error, setError] = useState('');
 
-  const handleLogin = async (e: any) => {
+  const handleLogin = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+      const formData = new FormData(e.currentTarget);
     const res = await signIn('credentials', {
       redirect: false,
-      email: e.target.email.value,
-      password: e.target.password.value,
+      email: formData.get("email"),
+      // e.target.email.value,
+      password: formData.get("password"), 
+      //e.target.password.value,
     });
 
     if (res?.error) {

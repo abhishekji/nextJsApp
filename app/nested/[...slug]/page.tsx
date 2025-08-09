@@ -1,12 +1,13 @@
-import React from 'react'
+import React from "react";
 
-const NestedPages = async ({params}: {params: Promise<{slug: string[]}>}) => {
+const NestedPages = async ({
+  params,
+}: {
+  params: Promise<{ slug: string[] }>;
+}) => {
+  const slugElems = await params;
+  console.log(slugElems);
+  return <div>NestedPages</div>;
+};
 
-    const slugElems = await params;
-    console.log(slugElems);
-  return (
-    <div>NestedPages</div>
-  )
-}
-
-export default NestedPages
+export default NestedPages;

@@ -1,11 +1,9 @@
 "use client";
 
-import React from 'react'
+import React from "react";
 
 const ErrorHandling = () => {
-  return (
-    <div>ErrorHandling</div>
-  )
-}
+  return <div>ErrorHandling</div>;
+};
 
-export default ErrorHandling
+export default ErrorHandling;

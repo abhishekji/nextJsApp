@@ -1,4 +1,4 @@
-import { users } from '@/app/data/users'
+
 import { NextRequest } from 'next/server';
 
 export const GET = (request: NextRequest) => {

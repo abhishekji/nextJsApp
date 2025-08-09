@@ -43,13 +43,13 @@ export default function SkillBoard() {
   };
 
   useEffect(() => {
-    getSkills()
-      .then((data) => {
-        console.log(data);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    // getSkills()
+    //   .then((data) => {
+    //     console.log(data);
+    //   })
+    //   .catch((err) => {
+    //     console.log(err);
+    //   });
   }, []);
 
   return (

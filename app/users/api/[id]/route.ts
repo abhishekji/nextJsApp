@@ -1,5 +1,3 @@
-import React from 'react'
-
 import { users } from '@/app/data/users'
 
 export const GET = async(

@@ -1,11 +1,8 @@
-
-import React from 'react'
-import AddToCart from './AddToCart';
+import React from "react";
+import AddToCart from "./AddToCart";
 
 const ProductCard = () => {
-  return (
-    <AddToCart></AddToCart>
-  )
-}
+  return <AddToCart></AddToCart>;
+};
 
-export default ProductCard
+export default ProductCard;

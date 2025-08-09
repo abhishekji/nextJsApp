@@ -7,14 +7,14 @@ generator client {
 
 datasource db {
   provider = "sqlite"
-  url      = "file:app.db"
+  url      = env("DATABASE_URL")
 }
 
 model Product {
   id     Int         @id @default(autoincrement())
   title  String
   price  Int
-  description String?
+  description String
 }
 
 model Skills {
@@ -23,3 +23,11 @@ model Skills {
   level   Int
   userId   String
 }
+
+model User {
+  id       Int    @id @default(autoincrement())
+  name     String
+  email    String @unique
+  password String
+}
+

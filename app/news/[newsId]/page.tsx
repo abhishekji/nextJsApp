@@ -1,4 +1,4 @@
-import { SearchParams } from "next/dist/server/request/search-params";
+
 import React from "react";
 
 const News = async ({
